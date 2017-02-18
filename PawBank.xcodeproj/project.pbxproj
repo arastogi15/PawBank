@@ -14,6 +14,9 @@
 		E06528A41E5848DA0000C679 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E06528A21E5848DA0000C679 /* LaunchScreen.storyboard */; };
 		E06528AF1E5848DA0000C679 /* PawBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06528AE1E5848DA0000C679 /* PawBankTests.swift */; };
 		E06528BA1E5848DA0000C679 /* PawBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06528B91E5848DA0000C679 /* PawBankUITests.swift */; };
+		E06528C81E58C0770000C679 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06528C71E58C0770000C679 /* LoginViewController.swift */; };
+		E06528CA1E58C9A00000C679 /* PetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06528C91E58C9A00000C679 /* PetTableViewController.swift */; };
+		E06528CC1E58E4830000C679 /* ShelterInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06528CB1E58E4830000C679 /* ShelterInfoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		E06528B51E5848DA0000C679 /* PawBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PawBankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E06528B91E5848DA0000C679 /* PawBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawBankUITests.swift; sourceTree = "<group>"; };
 		E06528BB1E5848DA0000C679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E06528C71E58C0770000C679 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E06528C91E58C9A00000C679 /* PetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetTableViewController.swift; sourceTree = "<group>"; };
+		E06528CB1E58E4830000C679 /* ShelterInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShelterInfoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				E06528981E5848DA0000C679 /* PawBank */,
+				E06528CE1E58E48B0000C679 /* View */,
+				E06528CF1E58E4900000C679 /* Controller */,
 				E06528AD1E5848DA0000C679 /* PawBankTests */,
 				E06528B81E5848DA0000C679 /* PawBankUITests */,
 				E06528971E5848DA0000C679 /* Products */,
@@ -97,11 +105,8 @@
 		E06528981E5848DA0000C679 /* PawBank */ = {
 			isa = PBXGroup;
 			children = (
+				E06528CD1E58E4860000C679 /* Model */,
 				E06528991E5848DA0000C679 /* AppDelegate.swift */,
-				E065289B1E5848DA0000C679 /* ViewController.swift */,
-				E065289D1E5848DA0000C679 /* Main.storyboard */,
-				E06528A01E5848DA0000C679 /* Assets.xcassets */,
-				E06528A21E5848DA0000C679 /* LaunchScreen.storyboard */,
 				E06528A51E5848DA0000C679 /* Info.plist */,
 			);
 			path = PawBank;
@@ -123,6 +128,36 @@
 				E06528BB1E5848DA0000C679 /* Info.plist */,
 			);
 			path = PawBankUITests;
+			sourceTree = "<group>";
+		};
+		E06528CD1E58E4860000C679 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E06528CB1E58E4830000C679 /* ShelterInfoModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E06528CE1E58E48B0000C679 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E06528A01E5848DA0000C679 /* Assets.xcassets */,
+				E06528A21E5848DA0000C679 /* LaunchScreen.storyboard */,
+				E065289D1E5848DA0000C679 /* Main.storyboard */,
+			);
+			name = View;
+			path = PawBank;
+			sourceTree = "<group>";
+		};
+		E06528CF1E58E4900000C679 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E065289B1E5848DA0000C679 /* ViewController.swift */,
+				E06528C91E58C9A00000C679 /* PetTableViewController.swift */,
+				E06528C71E58C0770000C679 /* LoginViewController.swift */,
+			);
+			name = Controller;
+			path = PawBank;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E06528C81E58C0770000C679 /* LoginViewController.swift in Sources */,
 				E065289C1E5848DA0000C679 /* ViewController.swift in Sources */,
+				E06528CC1E58E4830000C679 /* ShelterInfoModel.swift in Sources */,
 				E065289A1E5848DA0000C679 /* AppDelegate.swift in Sources */,
+				E06528CA1E58C9A00000C679 /* PetTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
