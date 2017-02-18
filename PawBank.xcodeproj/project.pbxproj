@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E065289A1E5848DA0000C679 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06528991E5848DA0000C679 /* AppDelegate.swift */; };
+		E065289C1E5848DA0000C679 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065289B1E5848DA0000C679 /* ViewController.swift */; };
+		E065289F1E5848DA0000C679 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E065289D1E5848DA0000C679 /* Main.storyboard */; };
+		E06528A11E5848DA0000C679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E06528A01E5848DA0000C679 /* Assets.xcassets */; };
+		E06528A41E5848DA0000C679 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E06528A21E5848DA0000C679 /* LaunchScreen.storyboard */; };
+		E06528AF1E5848DA0000C679 /* PawBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06528AE1E5848DA0000C679 /* PawBankTests.swift */; };
+		E06528BA1E5848DA0000C679 /* PawBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06528B91E5848DA0000C679 /* PawBankUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E06528AB1E5848DA0000C679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E065288E1E5848DA0000C679 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E06528951E5848DA0000C679;
+			remoteInfo = PawBank;
+		};
+		E06528B61E5848DA0000C679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E065288E1E5848DA0000C679 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E06528951E5848DA0000C679;
+			remoteInfo = PawBank;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E06528961E5848DA0000C679 /* PawBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PawBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E06528991E5848DA0000C679 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E065289B1E5848DA0000C679 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E065289E1E5848DA0000C679 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E06528A01E5848DA0000C679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E06528A31E5848DA0000C679 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E06528A51E5848DA0000C679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E06528AA1E5848DA0000C679 /* PawBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PawBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E06528AE1E5848DA0000C679 /* PawBankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawBankTests.swift; sourceTree = "<group>"; };
+		E06528B01E5848DA0000C679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E06528B51E5848DA0000C679 /* PawBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PawBankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E06528B91E5848DA0000C679 /* PawBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawBankUITests.swift; sourceTree = "<group>"; };
+		E06528BB1E5848DA0000C679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E06528931E5848DA0000C679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06528A71E5848DA0000C679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06528B21E5848DA0000C679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E065288D1E5848DA0000C679 = {
+			isa = PBXGroup;
+			children = (
+				E06528981E5848DA0000C679 /* PawBank */,
+				E06528AD1E5848DA0000C679 /* PawBankTests */,
+				E06528B81E5848DA0000C679 /* PawBankUITests */,
+				E06528971E5848DA0000C679 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E06528971E5848DA0000C679 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E06528961E5848DA0000C679 /* PawBank.app */,
+				E06528AA1E5848DA0000C679 /* PawBankTests.xctest */,
+				E06528B51E5848DA0000C679 /* PawBankUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E06528981E5848DA0000C679 /* PawBank */ = {
+			isa = PBXGroup;
+			children = (
+				E06528991E5848DA0000C679 /* AppDelegate.swift */,
+				E065289B1E5848DA0000C679 /* ViewController.swift */,
+				E065289D1E5848DA0000C679 /* Main.storyboard */,
+				E06528A01E5848DA0000C679 /* Assets.xcassets */,
+				E06528A21E5848DA0000C679 /* LaunchScreen.storyboard */,
+				E06528A51E5848DA0000C679 /* Info.plist */,
+			);
+			path = PawBank;
+			sourceTree = "<group>";
+		};
+		E06528AD1E5848DA0000C679 /* PawBankTests */ = {
+			isa = PBXGroup;
+			children = (
+				E06528AE1E5848DA0000C679 /* PawBankTests.swift */,
+				E06528B01E5848DA0000C679 /* Info.plist */,
+			);
+			path = PawBankTests;
+			sourceTree = "<group>";
+		};
+		E06528B81E5848DA0000C679 /* PawBankUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E06528B91E5848DA0000C679 /* PawBankUITests.swift */,
+				E06528BB1E5848DA0000C679 /* Info.plist */,
+			);
+			path = PawBankUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E06528951E5848DA0000C679 /* PawBank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E06528BE1E5848DA0000C679 /* Build configuration list for PBXNativeTarget "PawBank" */;
+			buildPhases = (
+				E06528921E5848DA0000C679 /* Sources */,
+				E06528931E5848DA0000C679 /* Frameworks */,
+				E06528941E5848DA0000C679 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PawBank;
+			productName = PawBank;
+			productReference = E06528961E5848DA0000C679 /* PawBank.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E06528A91E5848DA0000C679 /* PawBankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E06528C11E5848DA0000C679 /* Build configuration list for PBXNativeTarget "PawBankTests" */;
+			buildPhases = (
+				E06528A61E5848DA0000C679 /* Sources */,
+				E06528A71E5848DA0000C679 /* Frameworks */,
+				E06528A81E5848DA0000C679 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E06528AC1E5848DA0000C679 /* PBXTargetDependency */,
+			);
+			name = PawBankTests;
+			productName = PawBankTests;
+			productReference = E06528AA1E5848DA0000C679 /* PawBankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E06528B41E5848DA0000C679 /* PawBankUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E06528C41E5848DA0000C679 /* Build configuration list for PBXNativeTarget "PawBankUITests" */;
+			buildPhases = (
+				E06528B11E5848DA0000C679 /* Sources */,
+				E06528B21E5848DA0000C679 /* Frameworks */,
+				E06528B31E5848DA0000C679 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E06528B71E5848DA0000C679 /* PBXTargetDependency */,
+			);
+			name = PawBankUITests;
+			productName = PawBankUITests;
+			productReference = E06528B51E5848DA0000C679 /* PawBankUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E065288E1E5848DA0000C679 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Natalie Mackraz";
+				TargetAttributes = {
+					E06528951E5848DA0000C679 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					E06528A91E5848DA0000C679 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E06528951E5848DA0000C679;
+					};
+					E06528B41E5848DA0000C679 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E06528951E5848DA0000C679;
+					};
+				};
+			};
+			buildConfigurationList = E06528911E5848DA0000C679 /* Build configuration list for PBXProject "PawBank" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E065288D1E5848DA0000C679;
+			productRefGroup = E06528971E5848DA0000C679 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E06528951E5848DA0000C679 /* PawBank */,
+				E06528A91E5848DA0000C679 /* PawBankTests */,
+				E06528B41E5848DA0000C679 /* PawBankUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E06528941E5848DA0000C679 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E06528A41E5848DA0000C679 /* LaunchScreen.storyboard in Resources */,
+				E06528A11E5848DA0000C679 /* Assets.xcassets in Resources */,
+				E065289F1E5848DA0000C679 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06528A81E5848DA0000C679 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06528B31E5848DA0000C679 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E06528921E5848DA0000C679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E065289C1E5848DA0000C679 /* ViewController.swift in Sources */,
+				E065289A1E5848DA0000C679 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06528A61E5848DA0000C679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E06528AF1E5848DA0000C679 /* PawBankTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06528B11E5848DA0000C679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E06528BA1E5848DA0000C679 /* PawBankUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E06528AC1E5848DA0000C679 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E06528951E5848DA0000C679 /* PawBank */;
+			targetProxy = E06528AB1E5848DA0000C679 /* PBXContainerItemProxy */;
+		};
+		E06528B71E5848DA0000C679 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E06528951E5848DA0000C679 /* PawBank */;
+			targetProxy = E06528B61E5848DA0000C679 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E065289D1E5848DA0000C679 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E065289E1E5848DA0000C679 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E06528A21E5848DA0000C679 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E06528A31E5848DA0000C679 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E06528BC1E5848DA0000C679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E06528BD1E5848DA0000C679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E06528BF1E5848DA0000C679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PawBank/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mackraz.PawBank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E06528C01E5848DA0000C679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PawBank/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mackraz.PawBank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E06528C21E5848DA0000C679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PawBankTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mackraz.PawBankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PawBank.app/PawBank";
+			};
+			name = Debug;
+		};
+		E06528C31E5848DA0000C679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PawBankTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mackraz.PawBankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PawBank.app/PawBank";
+			};
+			name = Release;
+		};
+		E06528C51E5848DA0000C679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = PawBankUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mackraz.PawBankUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PawBank;
+			};
+			name = Debug;
+		};
+		E06528C61E5848DA0000C679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = PawBankUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mackraz.PawBankUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PawBank;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E06528911E5848DA0000C679 /* Build configuration list for PBXProject "PawBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E06528BC1E5848DA0000C679 /* Debug */,
+				E06528BD1E5848DA0000C679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E06528BE1E5848DA0000C679 /* Build configuration list for PBXNativeTarget "PawBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E06528BF1E5848DA0000C679 /* Debug */,
+				E06528C01E5848DA0000C679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E06528C11E5848DA0000C679 /* Build configuration list for PBXNativeTarget "PawBankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E06528C21E5848DA0000C679 /* Debug */,
+				E06528C31E5848DA0000C679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E06528C41E5848DA0000C679 /* Build configuration list for PBXNativeTarget "PawBankUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E06528C51E5848DA0000C679 /* Debug */,
+				E06528C61E5848DA0000C679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E065288E1E5848DA0000C679 /* Project object */;
+}
