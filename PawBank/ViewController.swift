@@ -30,9 +30,6 @@ class ViewController: UIViewController {
     @IBAction func paymentButtonClicked(_ sender: UIButton) {
     }
 
-    @IBAction func adoptButtonClicked(_ sender: Any) {
-    }
-
     @IBAction func fosterButtonClicked(_ sender: Any) {
     }
 }

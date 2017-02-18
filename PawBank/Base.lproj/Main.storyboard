@@ -41,7 +41,7 @@
                                 </items>
                             </navigationBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xfi-km-b5l" userLabel="pawIcon">
-                                <rect key="frame" x="302" y="169" width="46" height="50"/>
+                                <rect key="frame" x="291" y="169" width="57" height="50"/>
                             </imageView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="etb-IM-PMO" userLabel="moneyProgressView">
                                 <rect key="frame" x="27" y="193" width="256" height="2"/>
@@ -52,46 +52,38 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBm-vA-aRb" userLabel="adoptButton">
-                                <rect key="frame" x="27" y="572" width="42" height="30"/>
-                                <state key="normal" title="Adopt"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HkH-Fw-wCg" userLabel="fosterButton">
+                                <rect key="frame" x="236" y="572" width="112" height="30"/>
+                                <state key="normal" title="Adopt or Foster!"/>
                                 <connections>
-                                    <action selector="adoptButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OHm-eB-BQi"/>
+                                    <action selector="fosterButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aFc-Yy-peP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bez-FC-KeD" userLabel="donateButton">
-                                <rect key="frame" x="172" y="572" width="30" height="30"/>
-                                <state key="normal" title="$"/>
+                                <rect key="frame" x="27" y="572" width="63" height="30"/>
+                                <state key="normal" title="Donate :)"/>
                                 <connections>
                                     <action selector="paymentButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KPf-a0-OX0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HkH-Fw-wCg" userLabel="fosterButton">
-                                <rect key="frame" x="303" y="572" width="44" height="30"/>
-                                <state key="normal" title="Foster"/>
-                                <connections>
-                                    <action selector="fosterButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aFc-Yy-peP"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bez-FC-KeD" firstAttribute="baseline" secondItem="HkH-Fw-wCg" secondAttribute="baseline" id="5Fb-56-C7h"/>
-                            <constraint firstItem="dBm-vA-aRb" firstAttribute="baseline" secondItem="bez-FC-KeD" secondAttribute="baseline" id="ByL-AE-JNO"/>
                             <constraint firstItem="etb-IM-PMO" firstAttribute="centerY" secondItem="xfi-km-b5l" secondAttribute="centerY" id="DPR-uo-cgH"/>
                             <constraint firstItem="9pQ-mn-hKj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Dmg-Au-Y2i"/>
                             <constraint firstItem="etb-IM-PMO" firstAttribute="leading" secondItem="9pQ-mn-hKj" secondAttribute="leading" id="KD1-bO-duY"/>
                             <constraint firstItem="wDK-a1-LX1" firstAttribute="centerX" secondItem="9pQ-mn-hKj" secondAttribute="centerX" id="Kbh-Ne-clG"/>
-                            <constraint firstItem="937-Et-ZiI" firstAttribute="leading" secondItem="dBm-vA-aRb" secondAttribute="leading" id="LkM-A3-wd7"/>
                             <constraint firstItem="csR-f8-zzO" firstAttribute="centerX" secondItem="wDK-a1-LX1" secondAttribute="centerX" id="QDQ-2C-Lbi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="etb-IM-PMO" secondAttribute="trailing" constant="76" id="SpS-Po-SoS"/>
                             <constraint firstItem="wDK-a1-LX1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="TFO-i0-hjr"/>
                             <constraint firstItem="937-Et-ZiI" firstAttribute="top" secondItem="9pQ-mn-hKj" secondAttribute="bottom" constant="8" symbolic="YES" id="U6s-UA-qU5"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="HkH-Fw-wCg" secondAttribute="trailing" constant="12" id="Xq3-2M-fuU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HkH-Fw-wCg" secondAttribute="trailing" constant="11" id="Xq3-2M-fuU"/>
                             <constraint firstItem="csR-f8-zzO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZOa-zA-z3b"/>
-                            <constraint firstItem="937-Et-ZiI" firstAttribute="centerX" secondItem="bez-FC-KeD" secondAttribute="centerX" id="b6X-AI-q7r"/>
+                            <constraint firstItem="937-Et-ZiI" firstAttribute="centerX" secondItem="bez-FC-KeD" secondAttribute="centerX" constant="129" id="b6X-AI-q7r"/>
                             <constraint firstItem="xfi-km-b5l" firstAttribute="trailing" secondItem="9pQ-mn-hKj" secondAttribute="trailing" id="cL0-2E-exj"/>
-                            <constraint firstItem="xfi-km-b5l" firstAttribute="centerX" secondItem="HkH-Fw-wCg" secondAttribute="centerX" id="fOR-L7-SdY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bez-FC-KeD" secondAttribute="bottom" constant="65" id="dnC-tX-f8h"/>
+                            <constraint firstItem="xfi-km-b5l" firstAttribute="centerX" secondItem="HkH-Fw-wCg" secondAttribute="centerX" constant="27.5" id="fOR-L7-SdY"/>
                             <constraint firstItem="9pQ-mn-hKj" firstAttribute="trailing" secondItem="937-Et-ZiI" secondAttribute="trailing" id="fgW-tT-SwB"/>
                             <constraint firstItem="etb-IM-PMO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="11" id="fzh-2a-z3N"/>
                             <constraint firstItem="9pQ-mn-hKj" firstAttribute="top" secondItem="etb-IM-PMO" secondAttribute="bottom" constant="32" id="hBE-gr-d6A"/>
@@ -100,7 +92,6 @@
                             <constraint firstItem="wDK-a1-LX1" firstAttribute="top" secondItem="csR-f8-zzO" secondAttribute="bottom" id="qwP-9y-tTR"/>
                             <constraint firstItem="xfi-km-b5l" firstAttribute="top" secondItem="wDK-a1-LX1" secondAttribute="bottom" constant="84" id="sha-eh-pAi"/>
                             <constraint firstItem="9pQ-mn-hKj" firstAttribute="top" secondItem="xfi-km-b5l" secondAttribute="bottom" constant="8" symbolic="YES" id="vcY-FB-LH6"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dBm-vA-aRb" secondAttribute="bottom" constant="65" id="xAu-Dt-Mv5"/>
                             <constraint firstItem="9pQ-mn-hKj" firstAttribute="leading" secondItem="937-Et-ZiI" secondAttribute="leading" id="xOK-sc-ICQ"/>
                         </constraints>
                     </view>
