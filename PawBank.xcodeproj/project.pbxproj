@@ -193,6 +193,7 @@
 				TargetAttributes = {
 					E06528951E5848DA0000C679 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = FKC3V9DAJF;
 						ProvisioningStyle = Automatic;
 					};
 					E06528A91E5848DA0000C679 = {
@@ -410,6 +411,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FKC3V9DAJF;
 				INFOPLIST_FILE = PawBank/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mackraz.PawBank;
@@ -422,6 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FKC3V9DAJF;
 				INFOPLIST_FILE = PawBank/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mackraz.PawBank;
