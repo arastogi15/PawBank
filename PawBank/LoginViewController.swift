@@ -10,6 +10,9 @@ import UIKit
 struct PetData {
     static var pets: [Pet] = []
 }
+struct UserData {
+    static var userDictionary = [String : Any]()
+}
 
 class LoginViewController: UIViewController {
 
@@ -89,6 +92,38 @@ class LoginViewController: UIViewController {
         
         
         // Do any additional setup after loading the view.
+        
+        // Getting Users
+        let urlString: String = "http://5803e025.ngrok.io/users"
+        guard let userUrl = URL(string: urlString) else {
+            print("Error: cannot create URL")
+            return
+        }
+        let userUrlRequest = URLRequest(url: userUrl)
+        
+        // set up the session
+        let userConfig = URLSessionConfiguration.default
+        let userSession = URLSession(configuration: userConfig)
+        // make request
+        let userTask = userSession.dataTask(with: userUrlRequest, completionHandler: { (data, response, error) in
+            
+            print("got data")
+            print(data)
+            
+            let json = try? JSONSerialization.jsonObject(with: data!) as! [NSDictionary]
+            if json != nil {
+                let userDict = json?[0];
+                if (userDict != nil) {
+                    UserData.userDictionary = userDict as! [String : Any];
+                }
+            }
+        })
+        userTask.resume()
+        
+        
+        // Do any additional setup after loading the view.
+
+
     }
 
     

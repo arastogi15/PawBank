@@ -24,6 +24,7 @@
 		E06528D31E58FC0E0000C679 /* CaveatBrush-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E06528D21E58FC0E0000C679 /* CaveatBrush-Regular.ttf */; };
 		E06528D51E5907530000C679 /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06528D41E5907530000C679 /* RestApiManager.swift */; };
 		E06528D71E5949740000C679 /* AddPetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06528D61E5949740000C679 /* AddPetViewController.swift */; };
+		E06528E11E59C97C0000C679 /* EditPetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06528E01E59C97C0000C679 /* EditPetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		E06528D21E58FC0E0000C679 /* CaveatBrush-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CaveatBrush-Regular.ttf"; path = "../../../Downloads/fonts/Caveat_Brush/CaveatBrush-Regular.ttf"; sourceTree = "<group>"; };
 		E06528D41E5907530000C679 /* RestApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
 		E06528D61E5949740000C679 /* AddPetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPetViewController.swift; sourceTree = "<group>"; };
+		E06528E01E59C97C0000C679 /* EditPetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPetViewController.swift; sourceTree = "<group>"; };
 		EB909B35CEC76D67DD53C543 /* Pods-PawBankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawBankTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PawBankTests/Pods-PawBankTests.release.xcconfig"; sourceTree = "<group>"; };
 		F46640E5B95961D5CEE10AFA /* Pods-PawBankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawBankTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PawBankTests/Pods-PawBankTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,8 +182,8 @@
 			children = (
 				E06528A01E5848DA0000C679 /* Assets.xcassets */,
 				E06528D21E58FC0E0000C679 /* CaveatBrush-Regular.ttf */,
-				E06528A21E5848DA0000C679 /* LaunchScreen.storyboard */,
 				E065289D1E5848DA0000C679 /* Main.storyboard */,
+				E06528A21E5848DA0000C679 /* LaunchScreen.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -193,6 +195,7 @@
 				E06528C91E58C9A00000C679 /* PetTableViewController.swift */,
 				E06528C71E58C0770000C679 /* LoginViewController.swift */,
 				E06528D61E5949740000C679 /* AddPetViewController.swift */,
+				E06528E01E59C97C0000C679 /* EditPetViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -500,6 +503,7 @@
 				E065289A1E5848DA0000C679 /* AppDelegate.swift in Sources */,
 				E06528D51E5907530000C679 /* RestApiManager.swift in Sources */,
 				E06528D71E5949740000C679 /* AddPetViewController.swift in Sources */,
+				E06528E11E59C97C0000C679 /* EditPetViewController.swift in Sources */,
 				E06528CA1E58C9A00000C679 /* PetTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

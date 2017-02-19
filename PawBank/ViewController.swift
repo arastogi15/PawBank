@@ -17,7 +17,12 @@ extension ViewController : KolodaViewDelegate {
     
     func koloda(koloda: KolodaView, didSelectCardAt index: Int) {
         UIApplication.shared.openURL(NSURL(string: "https://yalantis.com/")! as URL)
+        
     }
+}
+
+struct currentIndex {
+    static var curr = 0;
 }
 
 extension UIColor {
@@ -41,9 +46,78 @@ extension UIColor {
 }
 
 extension ViewController: KolodaViewDataSource {
+    
     func kolodaNumberOfCards(_ koloda:KolodaView) -> Int {
         return PetData.pets.count
     }
+
+    func donationClicked() {
+        print("in donation clicked w/ userdata dict size of %d" , UserData.userDictionary.count )
+        if (UserData.userDictionary.count != 0) {
+            // display an alert
+            //1. Create the alert controller.
+            let alert = UIAlertController(title: "Donation", message: "Thank you! Please specify how much you would like to donate to your furry friend :)", preferredStyle: .alert)
+            
+            //2. Add the text field. You can configure it however you need.
+            alert.addTextField { (textField) in
+                textField.text = "0"
+                textField.keyboardType = .numberPad
+            }
+
+            // 3. Grab the value from the text field, and print it when the user clicks OK.
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
+                let textField = alert?.textFields![0] // Force unwrapping because we know it exists.
+                print("Text field: \(textField?.text)")
+                
+                if (textField?.text != nil) {
+                   // print(koloda);
+                    print("\n")
+                    var petID = currentIndex.curr + 1
+                    let json: [String : Any] =
+                        ["user_id" : UserData.userDictionary["id"],
+                         "pet_id" : petID,
+                         "amount" : Int((textField?.text)!),
+                         ]
+                    let jsonData = try? JSONSerialization.data(withJSONObject: json)
+                    let todoEndpoint: String = "http://5803e025.ngrok.io/addDonation"
+                    //let todoEndpoint: String = "http://requestb.in/182uvxg1"
+                    
+                    guard let url = URL(string: todoEndpoint) else {
+                        print("Error: cannot create URL")
+                        return
+                    }
+                    var urlRequest = URLRequest(url: url)
+                    urlRequest.httpMethod = "POST"
+                    urlRequest.httpBody = jsonData
+                    urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
+                    
+                    let task = URLSession.shared.dataTask(with: urlRequest) { data, response, error in
+                        guard let data = data, error == nil else {
+                            print(error?.localizedDescription ?? "No data")
+                            return
+                        }
+                        let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
+                        if let responseJSON = responseJSON as? [String: Any] {
+                            print(responseJSON)
+                        }
+                    }
+                    task.resume()
+
+                }
+                
+                
+            }))
+            self.present(alert, animated: true, completion: nil)
+
+                
+                
+        
+            
+            
+        }
+    }
+
+    
     
     func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
         //petImageView.image = petImages[index];
@@ -82,9 +156,12 @@ extension ViewController: KolodaViewDataSource {
         // buttons
         let donateButton = UIButton(frame: CGRect(x: 29 , y: height * 0.125, width: 114, height: 29))
         donateButton.setImage(#imageLiteral(resourceName: "unclickedDonateButton"), for: UIControlState.normal)
+        currentIndex.curr = koloda.currentCardIndex;
+        donateButton.addTarget(self, action:#selector(self.donationClicked), for: .touchUpInside)
+        
         
         let adoptionButton = UIButton(frame: CGRect(x:width * 0.75 - width * 0.125 , y: height * 0.125, width: 114, height: 29))
-        adoptionButton.setImage(#imageLiteral(resourceName: "donateClickedButton"), for: UIControlState.normal)
+        adoptionButton.setImage(#imageLiteral(resourceName: "adopt button unclicked"), for: UIControlState.normal)
 
         
         // adding to Label View
@@ -133,6 +210,18 @@ class ViewController: UIViewController {
         }
         
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    @IBOutlet var newWordField: UITextField!
+    var deletedString = "";
+    func wordEntered(alert: UIAlertAction!){
+        // store the new word
+        print(deletedString + " " + self.newWordField.text!);
+    }
+    func addTextField(textField: UITextField!){
+        // add the text field and make the result global
+        textField.placeholder = "Definition"
+        self.newWordField = textField
     }
     
     override func didReceiveMemoryWarning() {
