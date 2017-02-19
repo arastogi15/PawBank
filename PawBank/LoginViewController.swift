@@ -8,6 +8,11 @@
 
 import UIKit
 
+struct PetData {
+    static var pets: [Pet] = []
+    
+}
+
 class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -16,7 +21,7 @@ class LoginViewController: UIViewController {
         
         
         // Set up the URL request
-        let todoEndpoint: String = "http://387490ae.ngrok.io/pets"
+        let todoEndpoint: String = "http://1ee3ff50.ngrok.io/pets"
         guard let url = URL(string: todoEndpoint) else {
             print("Error: cannot create URL")
             return
@@ -24,36 +29,60 @@ class LoginViewController: UIViewController {
         let urlRequest = URLRequest(url: url)
         
         // set up the session
-//        let config = URLSessionConfiguration.defaultSessionConfiguration()
         let config = URLSessionConfiguration.default
         let session = URLSession(configuration: config)
-        
-        // make the request
-//        let task = session.dataTaskWithRequest(urlRequest, completionHandler: { (data, response, error) in
+        // make request
         let task = session.dataTask(with: urlRequest, completionHandler: { (data, response, error) in
-        // do stuff with response, data & error here
-//            print(error)
-//            print(response)
+ 
             print("got data")
             print(data)
-//            let dataString = NSString(data: data!, encoding: UTF8StringEncoding)
-//            let dataString = NSString(data) //string.data(using: .utf8)
-//            var datastring = NSString(data data: NSData!, NSCoding encoding: UInt)
 
-//            let resultOfURL = String(contentsOf:data!, usedEncoding: String.Encoding.utf8)
-           // let aldksjf = String(data: data!, encoding: .utf8)
-            
             let json = try? JSONSerialization.jsonObject(with: data!) as! [NSDictionary]
+            if json != nil {
+            // Adding JSON info to Pets array
+            // TODO: clean up code/make less repetitive
+            // TODO: make strings constants in Pet.swift maybe?
+            for petsInfoDict in json! {
+                let pet = Pet()
+                print(petsInfoDict["name"]);
+                if let nameStr = petsInfoDict["name"] as? String {
+                    pet.name = nameStr;
+                }
+                if let bioStr = petsInfoDict["biography"] as? String {
+                    pet.bio = bioStr;
+                }
+                if let breedStr = petsInfoDict["breed"] as? String {
+                    pet.breed = breedStr;
+                }
+                if let fundingDoneStr = petsInfoDict["fundingDone"] as? NSNumber {
+                    pet.fundingDone = Double(fundingDoneStr);
+                }
+                if let fundingGoalStr = petsInfoDict["fundingGoal"] as? NSNumber {
+                    pet.fundingGoal = Double(fundingGoalStr);
+                }
+                if let idStr = petsInfoDict["id"] as? NSNumber {
+                    pet.id = Int(idStr);
+                }
+                if let shelterIdStr = petsInfoDict["shelter_id"] as? NSNumber {
+                    pet.shelterId = Int(shelterIdStr);
+                }
+                PetData.pets.append(pet);
+            }
+                print((json?[0]["biography"])!);
+
+            }
             
             print(json);
             
             
             // TODO: add Optional nil guards
-            print((json?[0]["biography"])!);
-            
-            //print(aldksjf)
-//            print(dataString)
-//            NSLog(@"%@", data)
+            print("printing out pets: \n");
+            for pet in PetData.pets {
+                
+                print(pet.name);
+                print("\n");
+            }
+
         })
         task.resume()
         

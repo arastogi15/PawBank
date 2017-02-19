@@ -10,10 +10,10 @@ import UIKit
 
 class Pet: NSObject {
     var name = "name holder";
-    var shelterId = "000";
-    var id = "00"; // TODO: do i need?
+    var shelterId = 0;
+    var id = 0; // TODO: do i need?
     var breed = "German Shepard";
     var bio = "Bio info";
-    var fundingDone = "0";
-    var fundingGoal = "0";
+    var fundingDone = 0.0;
+    var fundingGoal = 0.0;
 }
