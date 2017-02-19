@@ -7,21 +7,22 @@
 //
 
 import UIKit
-
 struct PetData {
     static var pets: [Pet] = []
-    
 }
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var imgView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+//        
+//        tstView.dataSource = self
+//        tstView.delegate = self
         
         // Set up the URL request
-        let todoEndpoint: String = "http://1ee3ff50.ngrok.io/pets"
+        let todoEndpoint: String = "http://5803e025.ngrok.io/pets"
         guard let url = URL(string: todoEndpoint) else {
             print("Error: cannot create URL")
             return
@@ -90,6 +91,7 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

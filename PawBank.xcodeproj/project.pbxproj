@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		724C7D833ED1F25B89B30C32 /* Pods_PawBankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5BEDD814ED990AF05AD8559 /* Pods_PawBankTests.framework */; };
+		802AB26BEA9569474058E0BD /* Pods_PawBankUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5677806922004B123B4F7DF6 /* Pods_PawBankUITests.framework */; };
+		9EA4230AA43AFCC1F8E3F566 /* Pods_PawBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F48B4EB94580E5DCF0888A /* Pods_PawBank.framework */; };
 		E065289A1E5848DA0000C679 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06528991E5848DA0000C679 /* AppDelegate.swift */; };
 		E065289C1E5848DA0000C679 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065289B1E5848DA0000C679 /* ViewController.swift */; };
 		E065289F1E5848DA0000C679 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E065289D1E5848DA0000C679 /* Main.storyboard */; };
@@ -20,6 +23,7 @@
 		E06528D11E58EAC80000C679 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06528D01E58EAC80000C679 /* Pet.swift */; };
 		E06528D31E58FC0E0000C679 /* CaveatBrush-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E06528D21E58FC0E0000C679 /* CaveatBrush-Regular.ttf */; };
 		E06528D51E5907530000C679 /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06528D41E5907530000C679 /* RestApiManager.swift */; };
+		E06528D71E5949740000C679 /* AddPetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06528D61E5949740000C679 /* AddPetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5677806922004B123B4F7DF6 /* Pods_PawBankUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PawBankUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AD3525188F0DBC8F0548DA9 /* Pods-PawBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawBank.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PawBank/Pods-PawBank.debug.xcconfig"; sourceTree = "<group>"; };
+		76F48B4EB94580E5DCF0888A /* Pods_PawBank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PawBank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		800CA412D43FB32E78B1B257 /* Pods-PawBankUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawBankUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PawBankUITests/Pods-PawBankUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		92624857295217C23ED49C4D /* Pods-PawBankUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawBankUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PawBankUITests/Pods-PawBankUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C5BEDD814ED990AF05AD8559 /* Pods_PawBankTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PawBankTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C715D742623BB71F1199B456 /* Pods-PawBank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawBank.release.xcconfig"; path = "Pods/Target Support Files/Pods-PawBank/Pods-PawBank.release.xcconfig"; sourceTree = "<group>"; };
 		E06528961E5848DA0000C679 /* PawBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PawBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E06528991E5848DA0000C679 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E065289B1E5848DA0000C679 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +70,9 @@
 		E06528D01E58EAC80000C679 /* Pet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		E06528D21E58FC0E0000C679 /* CaveatBrush-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CaveatBrush-Regular.ttf"; path = "../../../Downloads/fonts/Caveat_Brush/CaveatBrush-Regular.ttf"; sourceTree = "<group>"; };
 		E06528D41E5907530000C679 /* RestApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
+		E06528D61E5949740000C679 /* AddPetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPetViewController.swift; sourceTree = "<group>"; };
+		EB909B35CEC76D67DD53C543 /* Pods-PawBankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawBankTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PawBankTests/Pods-PawBankTests.release.xcconfig"; sourceTree = "<group>"; };
+		F46640E5B95961D5CEE10AFA /* Pods-PawBankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawBankTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PawBankTests/Pods-PawBankTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EA4230AA43AFCC1F8E3F566 /* Pods_PawBank.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				724C7D833ED1F25B89B30C32 /* Pods_PawBankTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +96,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				802AB26BEA9569474058E0BD /* Pods_PawBankUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9FAF69732FFCD0DAB129FFF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76F48B4EB94580E5DCF0888A /* Pods_PawBank.framework */,
+				C5BEDD814ED990AF05AD8559 /* Pods_PawBankTests.framework */,
+				5677806922004B123B4F7DF6 /* Pods_PawBankUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E065288D1E5848DA0000C679 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +120,8 @@
 				E06528AD1E5848DA0000C679 /* PawBankTests */,
 				E06528B81E5848DA0000C679 /* PawBankUITests */,
 				E06528971E5848DA0000C679 /* Products */,
+				F090E0EF8D1199779158A89C /* Pods */,
+				9FAF69732FFCD0DAB129FFF2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,8 +192,22 @@
 				E065289B1E5848DA0000C679 /* ViewController.swift */,
 				E06528C91E58C9A00000C679 /* PetTableViewController.swift */,
 				E06528C71E58C0770000C679 /* LoginViewController.swift */,
+				E06528D61E5949740000C679 /* AddPetViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		F090E0EF8D1199779158A89C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6AD3525188F0DBC8F0548DA9 /* Pods-PawBank.debug.xcconfig */,
+				C715D742623BB71F1199B456 /* Pods-PawBank.release.xcconfig */,
+				F46640E5B95961D5CEE10AFA /* Pods-PawBankTests.debug.xcconfig */,
+				EB909B35CEC76D67DD53C543 /* Pods-PawBankTests.release.xcconfig */,
+				800CA412D43FB32E78B1B257 /* Pods-PawBankUITests.debug.xcconfig */,
+				92624857295217C23ED49C4D /* Pods-PawBankUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,9 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E06528BE1E5848DA0000C679 /* Build configuration list for PBXNativeTarget "PawBank" */;
 			buildPhases = (
+				36EA4A63A28D4E6BF94AFCD5 /* [CP] Check Pods Manifest.lock */,
 				E06528921E5848DA0000C679 /* Sources */,
 				E06528931E5848DA0000C679 /* Frameworks */,
 				E06528941E5848DA0000C679 /* Resources */,
+				DC2F26B0C8749BB313AF7812 /* [CP] Embed Pods Frameworks */,
+				9B8FB3B30FB4B9389A6F14F1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,9 +237,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E06528C11E5848DA0000C679 /* Build configuration list for PBXNativeTarget "PawBankTests" */;
 			buildPhases = (
+				1B035D31160FDADDBBB9DC17 /* [CP] Check Pods Manifest.lock */,
 				E06528A61E5848DA0000C679 /* Sources */,
 				E06528A71E5848DA0000C679 /* Frameworks */,
 				E06528A81E5848DA0000C679 /* Resources */,
+				FD31577354013AE281E85803 /* [CP] Embed Pods Frameworks */,
+				A8E4392E2261B7805DFF4633 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,9 +258,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E06528C41E5848DA0000C679 /* Build configuration list for PBXNativeTarget "PawBankUITests" */;
 			buildPhases = (
+				CC519C999A6D856D9BBEB918 /* [CP] Check Pods Manifest.lock */,
 				E06528B11E5848DA0000C679 /* Sources */,
 				E06528B21E5848DA0000C679 /* Frameworks */,
 				E06528B31E5848DA0000C679 /* Resources */,
+				5CE51D90629AF9746BABAD3C /* [CP] Embed Pods Frameworks */,
+				5D2465EC49CF96F6F628566A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -298,6 +350,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B035D31160FDADDBBB9DC17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		36EA4A63A28D4E6BF94AFCD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5CE51D90629AF9746BABAD3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PawBankUITests/Pods-PawBankUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D2465EC49CF96F6F628566A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PawBankUITests/Pods-PawBankUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B8FB3B30FB4B9389A6F14F1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PawBank/Pods-PawBank-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8E4392E2261B7805DFF4633 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PawBankTests/Pods-PawBankTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC519C999A6D856D9BBEB918 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DC2F26B0C8749BB313AF7812 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PawBank/Pods-PawBank-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD31577354013AE281E85803 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PawBankTests/Pods-PawBankTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E06528921E5848DA0000C679 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -309,6 +499,7 @@
 				E06528D11E58EAC80000C679 /* Pet.swift in Sources */,
 				E065289A1E5848DA0000C679 /* AppDelegate.swift in Sources */,
 				E06528D51E5907530000C679 /* RestApiManager.swift in Sources */,
+				E06528D71E5949740000C679 /* AddPetViewController.swift in Sources */,
 				E06528CA1E58C9A00000C679 /* PetTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,32 +648,41 @@
 		};
 		E06528BF1E5848DA0000C679 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AD3525188F0DBC8F0548DA9 /* Pods-PawBank.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FKC3V9DAJF;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = PawBank/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mackraz.PawBank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SUPPRESS_WARNINGS = NO;
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Debug;
 		};
 		E06528C01E5848DA0000C679 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C715D742623BB71F1199B456 /* Pods-PawBank.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FKC3V9DAJF;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = PawBank/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mackraz.PawBank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SUPPRESS_WARNINGS = NO;
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Release;
 		};
 		E06528C21E5848DA0000C679 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F46640E5B95961D5CEE10AFA /* Pods-PawBankTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,6 +697,7 @@
 		};
 		E06528C31E5848DA0000C679 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB909B35CEC76D67DD53C543 /* Pods-PawBankTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +712,7 @@
 		};
 		E06528C51E5848DA0000C679 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 800CA412D43FB32E78B1B257 /* Pods-PawBankUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = PawBankUITests/Info.plist;
@@ -524,6 +726,7 @@
 		};
 		E06528C61E5848DA0000C679 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92624857295217C23ED49C4D /* Pods-PawBankUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = PawBankUITests/Info.plist;
@@ -554,6 +757,7 @@
 				E06528C01E5848DA0000C679 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E06528C11E5848DA0000C679 /* Build configuration list for PBXNativeTarget "PawBankTests" */ = {
 			isa = XCConfigurationList;
@@ -562,6 +766,7 @@
 				E06528C31E5848DA0000C679 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E06528C41E5848DA0000C679 /* Build configuration list for PBXNativeTarget "PawBankUITests" */ = {
 			isa = XCConfigurationList;
@@ -570,6 +775,7 @@
 				E06528C61E5848DA0000C679 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
